@@ -327,7 +327,7 @@ p {
 }
 .modal-strong {
   display: block;
-  z-index: 2;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
@@ -351,6 +351,7 @@ p {
   margin-bottom: 20px;
 }
 .form-block .form-label {
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
