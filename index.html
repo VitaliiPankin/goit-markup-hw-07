@@ -17,35 +17,37 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
-      <div class="container header-content">
-        <nav class="header-navigation">
+      <div class="container page-header__content">
+        <nav class="page-header__navigation">
           <a href="./index.html" class="logo logo-header logo-navigation"
             >Web<span class="logo-color-studio">Studio</span></a
           >
           <ul class="site-nav">
-            <li class="header-link-nav">
-              <a class="header-link link-active line-effects" href="./"
+            <li class="site-nav__link">
+              <a class="page-link page-link__active page-link__line" href="./"
                 >Студия</a
               >
             </li>
-            <li class="header-link-nav">
-              <a class="header-link line-effects" href="./portfolio.html"
+            <li class="site-nav__link">
+              <a class="page-link page-link__line" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="header-link-nav">
-              <a class="header-link line-effects" href="">Контакты</a>
+            <li class="site-nav__link">
+              <a class="page-link page-link__line" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="auth-nav">
-          <li class="header-link-contacts">
-            <a class="header-link link-contacs" href="mailto:info@devstudio.com"
-              ><span class="icon-maile">
+          <li class="auth-nav__contacts">
+            <a
+              class="page-link page-link__contacs"
+              href="mailto:info@devstudio.com"
+              ><span class="page-link__icon">
                 <svg width="16" height="12">
                   <use href="./images/icons/symbol-defs.svg#icon-mesedge"></use>
                 </svg>
@@ -53,9 +55,9 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="header-link-contacts">
-            <a class="header-link link-contacs" href="tel:+380961111111">
-              <span class="icon-maile">
+          <li class="auth-nav__contacts">
+            <a class="page-link page-link__contacs" href="tel:+380961111111">
+              <span class="page-link__icon">
                 <svg width="10" height="16">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-smartphone"
@@ -69,7 +71,7 @@
       </div>
     </header>
     <main>
-      <section class="hero hero-bgpfoto">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
           <button class="button button-text" type="button" data-modal-open>
@@ -77,60 +79,62 @@
           </button>
         </div>
       </section>
-      <section class="peculiarities-sections">
+      <section class="peculiarities">
         <div class="container">
           <h2 class="visually-hidden">Особености</h2>
-          <ul class="peculiarities">
-            <li class="peculiarities-link">
-              <div class="peculiarities-svg">
+          <ul class="peculiarities-sections">
+            <li class="peculiarities-sections__link">
+              <div class="peculiarities-sections__svg">
                 <svg width="70" height="70">
                   <use
                     href="./images/icons/peculiarities.svg#icon-antenna"
                   ></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="peculiarities-paragraph">
+              <h3 class="peculiarities-sections__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="peculiarities-sections__paragraph">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="peculiarities-link">
-              <div class="peculiarities-svg">
+            <li class="peculiarities-sections__link">
+              <div class="peculiarities-sections__svg">
                 <svg width="70" height="70">
                   <use href="./images/icons/peculiarities.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-title">ПУНКТКАЛЬНОСТЬ</h3>
-              <p class="peculiarities-paragraph">
+              <h3 class="peculiarities-sections__title">ПУНКТКАЛЬНОСТЬ</h3>
+              <p class="peculiarities-sections__paragraph">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="peculiarities-link">
-              <div class="peculiarities-svg">
+            <li class="peculiarities-sections__link">
+              <div class="peculiarities-sections__svg">
                 <svg width="70" height="70">
                   <use
                     href="./images/icons/peculiarities.svg#icon-diagram"
                   ></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-title">ПЛАНИРОВАНИЕ</h3>
-              <p class="peculiarities-paragraph">
+              <h3 class="peculiarities-sections__title">ПЛАНИРОВАНИЕ</h3>
+              <p class="peculiarities-sections__paragraph">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="peculiarities-link">
-              <div class="peculiarities-svg">
+            <li class="peculiarities-sections__link">
+              <div class="peculiarities-sections__svg">
                 <svg width="70" height="70">
                   <use
                     href="./images/icons/peculiarities.svg#icon-astronaut"
                   ></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p class="peculiarities-paragraph">
+              <h3 class="peculiarities-sections__title">
+                СОВРЕМЕННЫЕ ТЕХНОЛОГИИ
+              </h3>
+              <p class="peculiarities-sections__paragraph">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -140,31 +144,33 @@
       </section>
       <section class="products-sections">
         <div class="container">
-          <h2 class="products-title">Чем мы занимаемся</h2>
-          <ul class="product-list">
-            <li class="products-foto">
+          <h2 class="products-sections__title">Чем мы занимаемся</h2>
+          <ul class="products-sections__list">
+            <li class="products-sections__foto">
               <img
                 src="./images/img-0.jpg"
                 width="370"
                 alt="руки человека пишут програму на маленьком ноутбуке"
               />
-              <p class="products-description">Десктопные приложения</p>
+              <p class="products-sections__description">
+                Десктопные приложения
+              </p>
             </li>
-            <li class="products-foto">
+            <li class="products-sections__foto">
               <img
                 src="./images/img-1.jpg"
                 width="370"
                 alt="человек который сравнивает приложение на смартфоне с приложениями на лептопе"
               />
-              <p class="products-description">Мобильные приложения</p>
+              <p class="products-sections__description">Мобильные приложения</p>
             </li>
-            <li class="products-foto">
+            <li class="products-sections__foto">
               <img
                 src="./images/img-2.jpg"
                 width="370"
                 alt="человек подбирает цвет через планшет"
               />
-              <p class="products-description">Дизайнерские решения</p>
+              <p class="products-sections__description">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -471,7 +477,7 @@
             <ul>
               <li class="footer-address-link">
                 <a
-                  class="company-address-link a-c-hover-focus"
+                  class="company-address-link hover-focus"
                   href="https://goo.gl/maps/QHeTT9nwSXY6Y2y69"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -480,15 +486,13 @@
               </li>
               <li class="footer-address-link">
                 <a
-                  class="company-contacts a-c-hover-focus"
+                  class="company-contacts hover-focus"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="footer-address-link">
-                <a
-                  class="company-contacts a-c-hover-focus"
-                  href="tel:+380991111111"
+                <a class="company-contacts hover-focus" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
